@@ -1,11 +1,16 @@
-# donateacry-corpus
-An infant cry audio corpus that's being built through the Donate-a-cry campaign - see http://donateacry.com
+# donateacry-corpus-cleaned-updated
+<p>An infant cry audio corpus based on https://github.com/gveres/donateacry-corpus</p>
+<p>This updated corpus is used as part of final project in Speech Technology Course in KTH (Royal Institute of Technology Sweden)</p>
+<p>Our group members are: Arra’di Nur Rizal - Jonathan Jan - Luise Dürlich - Shifei Chen</p>
 
 ## Source of these files
-This repository contains user-uploaded audio samples in their original, unmodified, unchecked form. The audio samples were uploaded using the Donate-a-cry mobile applications for Android and iOS.
+This folder contains cleaned and categorized data from https://github.com/gveres/donateacry-corpus
 
-## Using the files
-The database is published under the ODbL, see below. If you work with the corpus in any way, please drop us a line at hello@newparentsapps.com 
+## Updates to the original
+- All of the data have been converted to WAV format with uniform bit and sampling rate of 128 kbps and 8kHz
+- Using DBL (Dunstan Baby Language) categories as reference, data tagged with lonely, scared, and unknown are removed. Additionally data tagged with cold/hot was merged into discomfort.
+- All non-cries data has been removed manually by listening to them. These includes, white noise, baby chat, adult mimicking baby cries. etc.
+- All data are put into its respected folder without changing the original filename.
 
 ## File naming convention
 The audio files should contain baby cry samples, with the corresponding tagging information encoded in the filenames. The samples were tagged by the contributors themselves. So here's how to parse the filenames.
@@ -47,10 +52,6 @@ The structure is the same with the exception that the unix epoch timestamp is in
 - *bp* - belly pain
 - *dc* - discomfort
 - *ti* - tired
-- *lo* - lonely
-- *ch* - cold/hot
-- *sc* - scared
-- *dk* - don't know
 
 ## License
 *This donateacry-corpus is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/ - See more at: http://opendatacommons.org/licenses/odbl/#sthash.ejQJkkvi.dpuf*
